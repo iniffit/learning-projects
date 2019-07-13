@@ -1,13 +1,10 @@
-# READ ME
-# This is a dice roll simulator. You can run the program to roll two dice after answering questions. The dice roll is represent by 2 seperate integers.
+# This is a dice roll simulator. You can run the program to roll two dice after answering questions. The dice roll is represented by 2 seperate integers.
 # This is my first ever solo program in Python
-# I found the idea for this program after I became frustrated with some of the online training materials I was going through. I decided to dive into the language and found a list of beginner projects.
-# Here is a link to the list:
 # Some key learning points I got from writing this program
-#           - Importing variables (Random)
+#           - Importing modules (Random)
 #           - Nesting If Else statements
 #           - Outlining and testing code
-#           - Being resourceful, in general, and finding solutions to seemingly complex problems
+#           - Being resourceful in general and finding solutions to seemingly complex problems
 #           - Effective problem isolation and troubleshooting
 
 
@@ -30,22 +27,17 @@ if wanna_play == 'YES':
         wanna_play_again_again = input('Roll again?').upper()
         print ("Let's slow down. Don't wanna make any bad habits for ourselves.")  
     # NO ROUND 2
-    if wanna_play_again == 'NO':
+    elif wanna_play_again == 'NO':
         print("You've come this far, why stop now?")
-        print("This one's on us")
-        print('FIRST DIE')
+        print("This one's on us.")
         import random
-        for x in range(1):
+        for x in range(2):
             print (random.randint(1,6))
-        print('SECOND DIE')
-        import random
-        for x in range(1):
-            print (random.randint(1,6))
-            print("Enjoy your buttery roll.")
+        print("Enjoy your buttery roll.")
     else:
         print ('WRONG')
 # NO
-if wanna_play == 'NO':
+elif wanna_play == 'NO':
     print('Why are you even here?')
 # IMPROPER INPUT
 else:
@@ -55,11 +47,4 @@ else:
 
 
 
-
-
-
-
-
-
 # IT TWERKS!! <3
-
